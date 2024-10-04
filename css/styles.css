@@ -1,0 +1,588 @@
+/* Reseteo de márgenes y paddings para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global del body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fef8f7;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    color: #000000;
+}
+
+/* Encabezado usando Flexbox para centrar el contenido */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #dd8f8f;
+    position: relative;
+    z-index: 1;
+}
+
+/* Ubicación del nav respecto del header*/
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
+}
+/* Ubicación de los elementos del nav entre si y tamaño de letra*/
+.nav-list li {
+    padding: 0.5em;
+    font-size: 1.1em;
+}
+/* Apariencia de los enlaces dentro de cada elemento de la lista */
+.nav-list a {
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5em 1.2em; 
+    border: 0.2em solid #eae7e7; 
+    border-radius: 50%; 
+    transition: all 0.3s ease; 
+    display: inline-block;
+    text-align: center;
+}
+/* Efectos cuando paso el mousse por encima de los enlaces*/
+.nav-list a:hover {
+        background-color: #c0b8b6;
+        box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2); 
+        transform: translateY(-0.2em);
+}
+/* Estilo para el logo: tamaño, forma y demás */
+#logo {
+    padding: 0.5em;
+    margin: 0.5em 1em 0.5em 1em;
+    background-color: #ffffff;
+    border-radius: 50%;
+    max-width: 17%; 
+    object-fit: cover;
+
+}
+/* Tamaño y color de Título h1*/
+main h1 {
+    font-size: 3em;
+    margin-top: 0.5em;
+}
+/* Tamaño y color de subtítulos h2 */
+main h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+}
+
+/* Estilo para el contenedor de la imagen usando Flexbox */
+.picture {
+    display: flex;
+    justify-content: center;
+    margin: 1.2em 0;
+}
+/*Estilo para la imagen por id*/
+#dev_img{
+    max-width: 15em;
+    height: auto;
+    border-radius: 50%;
+    border: 0.2em solid #b1a5a3;
+    transition: transform 0.3s ease;
+}
+#dev_img:hover {
+    transform: scale(1.05);
+}
+
+/* Contenedor principal con Flexbox */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2em;
+}
+
+/* Secciones aspectos generales*/
+section {
+    max-width: 90%;
+    margin: 2.5em 0;
+    padding: 1.2em;
+    background-color: #eae7e7;
+    border-radius: 1em;
+    box-shadow: 0.1em 0.5em rgba(0, 0, 0, 0.1);
+}
+/* Tamaño y color de subtítulos h3 */
+h3 {
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 0.6em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+
+/*Contenedor de sección ¿qué hago?*/
+.services-container {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    box-sizing: content-box;
+}
+/* Apariencia de cada tarjeta dentro de ¿Qué hago? */
+.service {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em rgba(0, 0, 0, 0.1);
+    width: 20%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+/* Cambio en la tarjeta cuando hago hover */
+.service:hover {
+    transform: translateY(-0.7em);
+}
+/* Tamaño y apariencia de la imagen dentro de cada tarjeta*/
+.service i {
+    font-size: 2em;
+    color: #b1a5a3;
+    margin-bottom: 0.5em;
+}
+/* Tamaño y margen del h4 dentro de la tarjeta*/
+.service h4 {
+    margin-bottom: 0.7em;
+    font-size: 1.5em;
+}
+/* Tamaño y color del texto dentro de la tarjeta*/
+.service p {
+    font-size: 1em;
+    color: #555;
+}
+
+/*Sección proyectos características del contenedor de todas las tarjetas*/
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: content-box;
+    gap: 1.5em;
+}
+/* características de las tarjetas */
+.project {
+    background-color: #fff;
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em rgba(0, 0, 0, 0.1);
+    width: 30%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* transición en hover */
+.project:hover {
+    transform: scale(1.05);
+}
+/* carcaterísticas del título en las tarjetas */
+.project h4 {
+    padding: 0.5em;
+    font-size: 1.3em;
+    background-color: #b1a5a3;
+    color: #fff;
+    text-align: center;
+}
+/* características del texto en las tarjetas */
+.project p {
+    padding: 0.5em;
+    font-size: 1em;
+    color: #555;
+}
+
+.main-table{
+    display: table;
+}
+.auxiliar-tables{
+    display: none;
+}
+/* Estilo de la tabla "tecnologías" */
+#technologies table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto; 
+    font-weight: bold;
+    box-shadow: 0 0.4em 0.4em rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+/* Estilo para celdas (th y td) */
+#technologies th, #technologies td {
+    border: 0.1em solid #ddd; 
+    padding: 0.75em;
+    text-align: center;
+}
+
+/* Apariencia Encabezado (th) */
+#technologies th {
+    background-color: #b1a5a3; 
+    color: white; 
+    font-weight: 700;
+    text-transform: uppercase; 
+    letter-spacing: 0.05em; 
+}
+
+/* Alternar color de fondo entre filas pares e impares */
+#technologies tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+#technologies tr:nth-child(odd) {
+    background-color: #ffffff; 
+}
+
+/* Hover sobre filas */
+#technologies tr:hover {
+    background-color: #d1e7dd; 
+}
+
+/* Sutil transición para hover */
+#technologies tr {
+    transition: background-color 0.3s ease;
+}
+/* caracteríticas y ubicación de los logos dentro de la tabla */
+#technologies td img{
+    max-width: 10%;
+    display: block; 
+    margin: 0 auto 0.5em auto; 
+}
+/* Formulario de contacto, lo ubica en el centro del main */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%; 
+    margin: 0 auto; 
+}
+/* Estilo general del form, bordes y demás*/
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    padding: 1.2em;
+    border: 0.0625em solid #ddd;
+    border-radius: 0.5em;
+    background-color: #cfbbdd;
+    box-shadow: 0 0.125em 0.3125em rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5em;
+    opacity: 0.95;
+    transition: opacity 0.3s ease;
+}
+
+/* Espacio debajo de las etiquetas */
+label {
+    margin-bottom: 0.3em;
+    font-weight: 500;
+}
+/* Estilo de los inputs, tamaño, bordes */
+input {
+    margin-bottom: 0.9em;
+    padding: 0.7em;
+    border: 0.06em solid #ccc;
+    border-radius: 0.25em;
+    font-size: 1em;
+}
+/* Estilo del botón submit */
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Cambio de apariencia del botón cuando pasamos el mousse encima */
+input[type="submit"]:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Estilo del div de contacto por WhatsApp */
+#wa_contact {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    opacity: 0.9;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#wa_contact:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+#wa_contact i {
+    color: #25D366;
+    font-size: 2em;
+    margin-left: 0.5em;
+    transition: color 0.3s ease;
+}
+
+#wa_contact i:hover {
+    color: #128C7E;
+}
+
+/* Footer centrado usando Flexbox */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2em;
+    background-color: #dd8f8f;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+}
+
+/* Iconos de redes sociales */
+.social-icons {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 0.5em;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #c0b8b6;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* RESPONSIVIDAD */
+
+/* Tablet horizontal */
+
+@media (max-width: 1080px) { 
+    .header-container {
+        flex-direction: column; /* Cambiar la dirección a columna */
+        align-items: flex-start; /* Alinear elementos a la izquierda */
+        max-width: 90%;
+    }
+    #logo {
+        max-width: 20%;
+    }
+
+    .service {
+        width: 60%;
+    }
+    /* Reacomodar las tarjetitas */
+    .services-container{
+        justify-content: space-around; 
+    }
+    .project {
+        width: 60%;
+    }
+    
+    .projects-container{
+        justify-content: space-around;
+    }
+}
+
+/* Tablet vertical */
+@media (max-width: 768px) {
+    
+    .header-container {
+        flex-direction: column; /* Cambiar la dirección a columna */
+        align-items: flex-start; 
+    }
+    /* Usar grid para la disposición de los elementos del nav en dos columnas */
+    .nav-list {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
+        width: 100%; 
+    }
+
+    #logo {
+        max-width:25%;
+    }
+
+    main h1 {
+        font-size: 2.5em;
+    }
+
+    .service {
+        width: 45%;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
+
+/* Mobil 1 */
+@media (max-width: 480px) {
+    header{
+        max-width: 100%;
+        padding: 0 0.5em;
+    }
+    .header-container {
+        flex-direction: column; /* Cambiar la dirección a columna */
+        align-items: flex-start; 
+    }
+    .nav-list {
+        flex-direction: column; /* Disponer los elementos en columna */
+        width: 100%; /* Hacer que la lista de navegación ocupe el ancho completo */
+    }
+
+    .nav-list li {
+        font-size: 0.8em;
+        padding: 0.5em 0; /* Espaciado vertical entre elementos */
+        text-align: center; /* Centrar el texto de cada enlace */
+    }
+    #logo {
+        max-width: 35%;
+        margin-left: 0.5em;
+    }
+
+    main h1 {
+        font-size: 2em;
+    }
+
+    main h2 {
+        font-size: 1.8em;
+    }
+
+    #dev_img {
+        max-width: 12em;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        gap: 2em;
+    }
+    /* Muestra las tablas pequeñas */
+    .auxiliar-tables {
+        display: block; 
+    }
+    /* Oculta la tabla original */
+    .main-table {
+        display: none; 
+    }
+    /* modifica la letra de las tablitas y las separa entre si */
+    .technology-table {
+        font-size: 0.9em;
+        margin-bottom: 1.5em; 
+        text-align: center;
+    }
+    .technology-table h4{
+        font-size: 1.1em;
+        margin: 0;
+    }
+    #wa_contact{
+        font-size: 90%;
+        text-align: center;
+        display: table-column;
+    }
+   footer p{
+    text-align: center;
+    font-size: 80%;
+   }
+}
+
+/* Mobil 2 */
+@media (max-width: 375px) {
+    
+    header{
+        max-width: 100%;
+        padding: 0 0.5em;
+    }
+    .header-container {
+        flex-direction: column; /* Cambiar la dirección a columna */
+        align-items: flex-start; 
+    }
+    .nav-list {
+        flex-direction: column; /* Disponer los elementos en columna */
+        width: 90%; 
+    }
+
+    .nav-list li {
+        font-size: 0.8em;
+        padding: 0; /* Espaciado vertical entre elementos */
+        text-align: center; /* Centrar el texto de cada enlace */
+    }
+    #logo {
+        max-width: 35%;
+        margin: 0;
+    }
+
+    main h1 {
+        font-size: 2em;
+    }
+
+    main h2 {
+        font-size: 1.5em;
+    }
+
+    #dev_img {
+        max-width: 12em;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        gap: 2em;
+    }
+    /* Muestra las tablas pequeñas */
+    .auxiliar-tables {
+        display: block; 
+    }
+    /* Oculta la tabla original */
+    .main-table {
+        display: none; 
+    }
+    /* modifica la letra de las tablitas y las separa entre si */
+    .technology-table {
+        font-size: 0.9em;
+        margin-bottom: 1.5em; 
+        text-align: center;
+    }
+    .technology-table h4{
+        font-size: 1.1em;
+        margin: 0;
+    }
+    #wa_contact{
+        font-size: 90%;
+        text-align: center;
+        display: table-column;
+    }
+   footer p{
+    text-align: center;
+    font-size: 80%;
+   }
+}

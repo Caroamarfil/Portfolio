@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carolina Amarfil Portfolio</title>
+    <!-- Link a la hoja de estilos -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- link a google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link a font awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- Nav con links a cada sección -->
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#services">¿Qué hago?</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+            <img id="logo" src="./assets/img/logo.png" alt="Logo del desarrollador">
+    </header>
+
+    <main>
+        <h1>Carolina Amarfil</h1>
+        <h2>Desarrolladora de Software</h2>
+        <!-- div con foto del desarrollador para poder usar la clase y el id para dar estilo en css-->
+        <div class="picture">
+            <img id="dev_img" src="./assets/img/Foto.jpg" alt="Foto del desarrollador">
+        </div>
+        
+
+        <!-- Se diide el main en secciones, cada una de las cuales contiene una temática particular -->
+
+        <!-- En esta sección (about) me gustaría agregar algo más llamativo, como un carrousel o algo así -->
+        <section id="about">
+            <h3>Sobre mí</h3>
+            <div>
+                <p>
+                    Soy una profesional con experiencia en atención al cliente, administración y liderazgo de equipos en sectores variados, desde seguros y ventas hasta gestión de inventarios y facturación. Mi trayectoria
+                    incluye roles en los que he desarrollado habilidades clave como la resolución de problemas, la retención de clientes y la capacitación de nuevos empleados, siempre orientada al cumplimiento de objetivos.
+                </p>
+                <p>
+                    Estas experiencias me han brindado las herramientas necesarias para realizar un excelente análisis de las características de tu negocio y así poder determinar las mejoras que podemos implementar para diseñar los productos que mejor se adecuen a tus necesidades.
+                </p>
+                <p>
+                    Actualmente, estoy enfocada en iniciar una carrera en el desarrollo de software, con especial interés en la programación web. Estoy cursando la Tecnicatura Superior en Desarrollo de Software y he completado un curso intensivo de Desarrollo Web Full Stack con Python. Mi objetivo es combinar mi experiencia en gestión y servicio al cliente con mis nuevas habilidades técnicas para ofrecer soluciones eficientes y funcionales en el ámbito digital.
+                </p>
+            </div>
+        </section>
+        <!-- Sección ¿Qué hago? con bloques -->
+        <section id="services">
+            <h3>¿Qué hago?</h3>
+            <div class="services-container">
+                <div class="service">
+                    <i class="fas fa-code"></i>
+                    <h4>Desarrollo Web</h4>
+                    <p>Creación de sitios web responsivos y funcionales utilizando las últimas tecnologías.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-database"></i>
+                    <h4>Gestión de Bases de Datos</h4>
+                    <p>Diseño y administración de bases de datos eficientes y seguras.</p>
+                </div>
+                <div class="service">
+                    <i class="fa fa-cloud" aria-hidden="true"></i>
+                    <h4>Sistemas en la Nube</h4>
+                    <p>Diseño e implementación de sistemas escalables y seguros en la nube con AWS para optimizar recursos y mejorar la eficiencia de proyectos.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Desarrollo Móvil</h4>
+                    <p>Desarrollo de aplicaciones móviles para Android e iOS.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section id="projects">
+            <h3>Proyectos</h3>
+            <div class="projects-container">
+                <div class="project">
+                    <h4>Sistema de Gestión para Clínicas Médicas</h4>
+                    <p>Desarrollo de un sistema de gestión de operaciones para clínicas médicas.</p>
+                </div>
+                <div class="project">
+                    <h4>Sistema de Gestión para Gimnasios</h4>
+                    <p>Desarrollo de un sistema de gestión de operaciones para gimnasios. Versiones web y Android.</p>
+                </div>
+                <div class="project">
+                    <h4>Desarrollo de Web App Académica</h4>
+                    <p>Desarrollo de una página web académica con características contributivas y de búsqueda de material.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Tecnologías  -->
+        <section id="technologies">
+            <h3>Tecnologías</h3>
+            <table class="main-table">
+                <thead>
+                    <tr>
+                        <th>Tecnologías que trabajo</th>
+                        <th>Tecnologías que estoy aprendiendo</th>
+                        <th>Herramientas que manejo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />HTML
+                        </td>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                          JavaScript
+                        </td>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
+                          Visual Studio Code
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                          CSS
+                        </td>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+                          Node.js
+                        </td>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" />
+                          Visual Studio
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+                          C#
+                        </td>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                          React
+                        </td>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" />
+                          Android Studio
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" />
+                          Kotlin
+                        </td>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+                          PHP
+                        </td>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                          Git Hub
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                          Python
+                        </td>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" />
+                          Vuejs
+                        </td>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                          MySQL
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+                          Amazon Web Services
+                        </td>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                          Java
+                        </td>
+                        <td>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg" />
+                          MariaDB
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="auxiliar-tables">
+                <div class="technology-table">
+                    <h4>Tecnologías que trabajo</h4>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />HTML
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />CSS
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />C#
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" />Kotlin
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />Python
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />Amazon Web Services
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="technology-table">
+                    <h4>Tecnologías que estoy aprendiendo</h4>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />JavaScript
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />Node.js
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />React
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />PHP
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" />Vue.js
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />Java
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="technology-table">
+                    <h4>Herramientas que manejo</h4>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />Visual Studio Code
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" />Visual Studio
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" />Android Studio
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />Git Hub
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />MySQL
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg" />MariaDB
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contact">
+            <h3>Contacto</h3>
+            <form id="contact-form" action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <input type="submit" value="Enviar">
+            </form>
+
+            <div id="wa_contact">
+                <p>¡También puedes contactarme por WhatsApp!</p>
+                <a href="https://wa.me/543518017680" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/tuusuario" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/tuusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/tuusuario" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>
+            &copy; 2024 Carolina Amarfil. Todos los derechos reservados.
+        </p>
+    </footer>
+       
+</body>
+
+</html>
